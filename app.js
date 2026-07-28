@@ -69,6 +69,10 @@ const sesssionOptions = {
 //   res.send("Hi, I am Vedant");
 // });
 
+app.get("/", (req, res) => {
+    res.redirect("/listings");
+});
+
 app.use(session(sesssionOptions));
 app.use(flash());
 
